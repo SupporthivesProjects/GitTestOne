@@ -1,0 +1,5 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/learnsupport/public_html/GitTestOne
+ - /bin/cp -r * $DEPLOYPATH

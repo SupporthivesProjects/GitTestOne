@@ -1,6 +1,7 @@
 ---
 deployment:
- tasks:
- - export DEPLOYPATH=/home/learnsupport/public_html/GitTestOne
- - /bin/cp index.html $DEPLOYPATH
- - /bin/cp -r * $DEPLOYPATH
+  tasks:
+    - echo "Deploy ran at $(date)" >> /home/learnsupport/public_html/GitTestOne/deploy.log
+    - export DEPLOYPATH=/home/learnsupport/public_html/GitTestOne
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
